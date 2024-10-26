@@ -1,0 +1,473 @@
+/*-----------------------------------*\
+  #main.css
+\*-----------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 85%;
+  margin-inline: auto;
+}
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+
+
+\*-----------------------------------*/
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.header h4 {
+  font-size: 18px;
+  color: #30c0af;
+  font-weight: bold;
+}
+
+.header h6 {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0px 0px 44px;
+}
+.header h6 span {
+  color: #ff8086;
+  position: relative;
+}
+
+.header h6 span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-image: url("/Edu/assets/images/line-shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -5px;
+  left: 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding-block: 10px;
+  padding-inline: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+header {
+  padding-block: 30px;
+  background-image: url("/Edu/assets/images/hero-bg.png");
+  background-position: right center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+header .navbar button {
+  background-color: black;
+  padding-inline: 10px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding-block: 15px;
+  color: white;
+}
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 30px;
+}
+.hero h1 {
+  font-size: 77px;
+}
+.hero h1 span {
+  color: #ff8086;
+}
+.hero p {
+  position: relative;
+  color: #7b7b8a;
+  margin: 24px 0 44px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3px;
+  height: 60px;
+  background-color: #ff8086;
+  transform: translateY(-50%);
+}
+
+.hero button {
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+.hero button:hover {
+  outline: 3px solid #ff8086;
+}
+.hero button:first-child {
+  background-color: #ff8086;
+  border-color: #ff8086;
+}
+.hero button:last-of-type {
+  background-color: #000;
+  border-color: #000;
+}
+
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+
+.category {
+  background-image: url("/Edu/assets/images/category-bg.png");
+  background-position: left center;
+  padding-block: 50px;
+}
+.category .cate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  row-gap: 50px;
+}
+.category .cate div {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border-radius: 5px;
+}
+.box:hover {
+  border-left: 5px solid #ff8086;
+}
+.category .cate div .cate-spesfic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.category .btn {
+  background-color: #ff8086;
+  margin-top: 40px;
+  display: block;
+  margin-inline: auto;
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+.about .container {
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.about .container .image {
+  width: 60%;
+}
+.about .container .image img {
+  width: 100%;
+}
+.about .container .About-info {
+  width: 40%;
+}
+.About-info h4 {
+  color: #30c0af;
+  font-size: large;
+  width: 100%;
+}
+.About-info .header p {
+  color: #7b7b8a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.shape {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.shape .head {
+  display: flex;
+  color: #000;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.shape .spentage {
+  background-color: #f1f1f3;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  display: flex;
+}
+.spentage span {
+  border-radius: 5px;
+}
+
+/*-----------------------------------*\
+  #COURSE
+\*-----------------------------------*/
+.courses {
+  background-image: url("/Edu/assets/images/category-bg.png");
+  background-position: left right;
+  padding-block: 60px;
+}
+.courses .contain {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 9px;
+  width: 45%;
+  background-color: #fff;
+  padding-inline: 30px;
+  padding-block: 30px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.contain img {
+  width: 38%;
+}
+.courses .contain .course-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.courses .contain .course-info .head {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.courses .contain .course-info .head h5 {
+  font-size: 20px;
+}
+.courses .contain .course-info .head .rate {
+  display: flex;
+}
+.course-info .Course-Details {
+  color: #7b7b8a;
+  font-size: 20px;
+}
+.course-info .lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-info .lesson div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.course-info .lesson div img {
+  width: 20px;
+}
+.courses .allinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 5px;
+}
+
+/*-----------------------------------*\
+  #CTA
+
+\*-----------------------------------*/
+.Blog {
+  background-color: #30c0af;
+  padding-inline: 30px;
+  height: 40vh;
+  padding-block: 30px;
+  display: flex;
+}
+.Blog .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Blog button {
+  color: #000;
+  font-weight: 700;
+  transition:all 0.5s ease-out;
+}
+.Blog button:hover {
+  background-color: #fff;
+}
+.Blog p {
+  color: #fff;
+  font-size: 50px;
+  max-width: 40%;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+footer {
+  padding-top: 70px;
+  background-image: url("/Edu/assets/images/footer-bg.png");
+  max-height: max-content;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer h1 {
+  margin-bottom: 20px;
+}
+footer p {
+  max-width: 70%;
+  margin-bottom: 10px;
+  color: #7b7b8a;
+}
+footer section {
+  width: 50%;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  color: #7b7b8a;
+}
+.foot{
+  border-top: 1px solid #7b7b8a;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #7b7b8a;
+}
+header nav .bar{
+  display: none;
+}
+
+/*-----------------------------------*\
+  #CONTAINER QUERIES
+\*-----------------------------------*/
+.container {
+  width: 85%;
+  margin-inline: auto;
+}
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media (max-width:750px) {
+  header nav ul ,header nav .tbn {
+    display: none;
+    
+  }
+  header .hero .section1 button {
+    width: 49%; 
+  }
+  header nav .bar{
+    display: block;
+    background: none;
+    color: #7b7b8a;
+    border: none;
+    font-size:27px;
+  }
+
+}
+@media (max-width:880px) {
+   .category .cate .box{
+     width: 100%;
+   }
+   .about .container{
+    flex-direction: column;
+    align-items: center;
+   }
+   .about .container .About-info{
+    width: 100%;
+   }
+   .courses .allinfo{
+    flex-direction: column;
+    align-items: center;
+   }
+   .courses .allinfo .contain{
+    width: 100%;
+   }
+   .Blog{
+    overflow: hidden;
+   }
+   .Blog p{
+    font-size: 20px;
+   }
+   footer .container{
+    flex-wrap: wrap;
+   }
+   footer .Posts {
+    display: flex;
+    flex-wrap:wrap;
+   }
+   footer .Posts  img{
+    width: 40%;
+   }
+   .foot span {
+    text-align: center;
+   }
+}
+@media (max-width:970px){
+  header .hero .section2{
+    display: none;
+  }
+  footer .Posts  img{
+    width: 40%;
+   }
+  
+}
